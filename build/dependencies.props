@@ -13,9 +13,9 @@
     <BenchmarksOnlyMicrosoftEntityFrameworkCoreDesignPackageVersion>2.1.0</BenchmarksOnlyMicrosoftEntityFrameworkCoreDesignPackageVersion>
     <BenchmarksOnlyMicrosoftEntityFrameworkCoreSqlitePackageVersion>2.1.0</BenchmarksOnlyMicrosoftEntityFrameworkCoreSqlitePackageVersion>
     <BenchmarksOnlyMicrosoftEntityFrameworkCoreSqlServerPackageVersion>2.1.0</BenchmarksOnlyMicrosoftEntityFrameworkCoreSqlServerPackageVersion>
-    <BenchmarksOnlyMySqlConnectorPackageVersion>0.42.1</BenchmarksOnlyMySqlConnectorPackageVersion>
+    <BenchmarksOnlyMySqlConnectorPackageVersion>0.43.0</BenchmarksOnlyMySqlConnectorPackageVersion>
     <BenchmarksOnlyNpgsqlEntityFrameworkCorePostgreSQLPackageVersion>2.1.0</BenchmarksOnlyNpgsqlEntityFrameworkCorePostgreSQLPackageVersion>
-    <BenchmarksOnlyPomeloEntityFrameworkCoreMySqlPackageVersion>2.1.0-rc1-final</BenchmarksOnlyPomeloEntityFrameworkCoreMySqlPackageVersion>
+    <BenchmarksOnlyPomeloEntityFrameworkCoreMySqlPackageVersion>2.1.1</BenchmarksOnlyPomeloEntityFrameworkCoreMySqlPackageVersion>
     <InternalAspNetCoreAnalyzersPackageVersion>2.2.0-preview1-34784</InternalAspNetCoreAnalyzersPackageVersion>
     <InternalAspNetCoreSdkPackageVersion>2.2.0-preview1-17099</InternalAspNetCoreSdkPackageVersion>
     <MicrosoftAspNetCoreAllPackageVersion>2.2.0-preview1-34784</MicrosoftAspNetCoreAllPackageVersion>
