@@ -21,6 +21,7 @@ namespace Microsoft.AspNetCore.Mvc.Analyzers
             IConvertToActionResult = compilation.GetTypeByMetadataName(SymbolNames.IConvertToActionResult);
             NonActionAttribute = compilation.GetTypeByMetadataName(SymbolNames.NonActionAttribute);
             NonControllerAttribute = compilation.GetTypeByMetadataName(SymbolNames.NonControllerAttribute);
+            ProducesDefaultResponseTypeAttribute = compilation.GetTypeByMetadataName(SymbolNames.ProducesDefaultResponseTypeAttribute);
             ProducesResponseTypeAttribute = compilation.GetTypeByMetadataName(SymbolNames.ProducesResponseTypeAttribute);
 
             var disposable = compilation.GetSpecialType(SpecialType.System_IDisposable);
@@ -51,6 +52,8 @@ namespace Microsoft.AspNetCore.Mvc.Analyzers
         public INamedTypeSymbol NonActionAttribute { get; }
 
         public INamedTypeSymbol NonControllerAttribute { get; }
+
+        public INamedTypeSymbol ProducesDefaultResponseTypeAttribute { get; }
 
         public INamedTypeSymbol ProducesResponseTypeAttribute { get; }
     }
