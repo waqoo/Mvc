@@ -319,6 +319,11 @@ namespace Microsoft.AspNetCore.Mvc.Internal
             metadata.Add(source);
             metadata.Add(action);
 
+            if (action.EndpointMetadata != null)
+            {
+                metadata.AddRange(action.EndpointMetadata);
+            }
+
             if (!string.IsNullOrEmpty(routeName))
             {
                 metadata.Add(new RouteNameMetadata(routeName));
@@ -337,19 +342,7 @@ namespace Microsoft.AspNetCore.Mvc.Internal
                 // Currently they need to implement IActionConstraintMetadata
                 foreach (var actionConstraint in action.ActionConstraints)
                 {
-                    if (actionConstraint is HttpMethodActionConstraint httpMethodActionConstraint)
-                    {
-                        // yolo
-                        if (httpMethodActionConstraint.GetType().Name == "CorsHttpMethodActionConstraint")
-                        {
-                            metadata.Add(new HttpMethodMetadata(httpMethodActionConstraint.HttpMethods, acceptCorsPreflight: true));
-                        }
-                        else
-                        {
-                            metadata.Add(new HttpMethodMetadata(httpMethodActionConstraint.HttpMethods, acceptCorsPreflight: false));
-                        }
-                    }
-                    else if (actionConstraint is IEndpointConstraintMetadata)
+                    if (actionConstraint is IEndpointConstraintMetadata)
                     {
                         // The constraint might have been added earlier, e.g. it is also a filter descriptor
                         if (!metadata.Contains(actionConstraint))
