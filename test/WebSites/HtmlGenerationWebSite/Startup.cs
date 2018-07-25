@@ -34,7 +34,7 @@ namespace HtmlGenerationWebSite
                 routes.MapRoute(
                     name: "productRoute",
                     template: "Product/{action}",
-                    defaults: new { controller = "Product" });
+                    defaults: new { controller = "HtmlGeneration_Product" });
                 routes.MapRoute(
                     name: "default",
                     template: "{controller}/{action}/{id?}",
